@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background: #020202;
+    cursor: crosshair;
+}
+canvas{display:block;width: 100%;
+    margin: auto;}
+h1 {
+    position: absolute;
+    top: 20%;
+    max-width: 616px;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    color: #ffffffc7;
+    right: 0;
+    margin: auto;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 900;
+    -webkit-user-select: none;
+    user-select: none;
+    text-align: center;
+    background: #00000094;
+}
