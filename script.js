@@ -156,3 +156,35 @@ document.ontouchstart = evt => birthday.onClick(evt)
 
 
 })()
+
+
+const text = "Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է: Սկսած 1500-ականներից` Lorem Ipsum-ը հանդիսացել է տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ, ինչը մի անհայտ տպագրիչի կողմից տարբեր տառատեսակների օրինակների գիրք ստեղծելու ջանքերի արդյունք է: Այս տեքստը ոչ միայն կարողացել է գոյատևել հինգ դարաշրջան, այլև ներառվել է էլեկտրոնային տպագրության մեջ` մնալով էապես անփոփոխ: Այն հայտնի է դարձել 1960-ականներին Lorem Ipsum բովանդակող Letraset էջերի թողարկման արդյունքում, իսկ ավելի ուշ համակարգչային տպագրության այնպիսի ծրագրերի թողարկման հետևանքով, ինչպիսին է Aldus PageMaker-ը, որը ներառում է Lorem Ipsum-ի տարատեսակներ:";
+const typingText = document.getElementById('typing-text');
+let index = 0;
+
+function type() {
+    if (index < text.length) {
+        typingText.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
+    }
+}
+
+
+// var audio = document.getElementById("myAudio");
+// Function to play the audio
+window.onload = function() {
+
+}
+
+function paly(){
+    type();
+    var backgroundAudio = document.getElementById("myAudio");
+    backgroundAudio.play();
+    backgroundAudio.volume=0.03
+    var show = document.getElementById('show')
+    var click = document.getElementById('click')
+    show.style.display="block"
+    click.style.display="none"
+    console.log("a")
+}
